@@ -37,7 +37,11 @@ footer p {
     font-size: 0.8em;
     text-align: center;
 }
-
+footer div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
 .cta {
     display: inline-block;
     background-color: white;
@@ -45,6 +49,16 @@ footer p {
     border-radius: 50px;
 }
 
+.cta:hover {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
 a:hover {
     text-decoration: underline;
+}
+
+.lien-icone:hover {
+    opacity: 0.5;
 }

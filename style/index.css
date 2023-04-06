@@ -27,9 +27,31 @@
 
 .accueil-photos {
     background-color: white;
+    padding: 80px;
+}
+
+.accueil-photos h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.accueil-photos div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.accueil-photos img {
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    object-fit: cover;
 }
 
 .cut-footer {
-    background: linear-gradient(90deg, rgba(129,157,215,1) 0%, rgba(102,196,215,1) 48%,
-     rgba(197,225,231,1)100%);
+    padding: 20px 20px;
+    margin: auto;
+    text-align: center;
 }
