@@ -17,6 +17,7 @@ h1 {
     padding: 50px;
     border-left: 1px solid white;
     border-bottom: 1px solid white;
+    padding-bottom: 60px;
 }
 
 .conteneur-a-propos h2 {
@@ -33,7 +34,7 @@ h1 {
     padding: 50px;
     border-left: 1px solid white;
     border-bottom: 1px solid white;
-    margin-bottom: 20px;
+    padding-bottom: 60px;
 }
 
 .a-propos-progra h2 {
@@ -66,5 +67,6 @@ h1 {
 }
 
 .cut-a-propos {
-    background-color: white;
+    background: linear-gradient(90deg, rgba(129,157,215,1) 0%, rgba(102,196,215,1) 50%,
+    rgba(197,225,231,1)100%);
 }
