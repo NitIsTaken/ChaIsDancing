@@ -1,0 +1,70 @@
+.a-propos-main {
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.a-propos-contact-progra a {
+    text-decoration: underline;
+}
+
+.conteneur-a-propos {
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.conteneur-a-propos h2 {
+    margin-top: 30px;
+}
+
+.conteneur-a-propos ul {
+    margin-top: 30px;
+}
+
+.a-propos-progra {
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
+
+.a-propos-progra h2 {
+    margin-top: 30px;
+}
+
+.a-propos-progra ul {
+    margin-top: 30px;
+}
+
+.a-propos-contact-progra p {
+    margin-top: 30px;
+}
+
+.a-propos-contact {
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
+
+.a-propos-contact h2 {
+    margin-top: 30px;
+}
+
+.a-propos-contact p {
+    margin-top: 30px;
+}
+
+.cut-a-propos {
+    background-color: white;
+}
