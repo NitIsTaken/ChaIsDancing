@@ -1,57 +1,58 @@
 .accueil-intro {
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    justify-content: center;
-    margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .accueil-intro img {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 400px;
-    height: 600px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 400px;
+  height: 600px;
 }
 
 .accueil-intro h1 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .accueil-intro p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .accueil-intro div {
-    padding-right: 80px;
+  padding-right: 80px;
 }
 
 .accueil-photos {
-    background-color: white;
-    padding: 80px;
+  background-color: white;
+  padding: 80px;
 }
 
 .accueil-photos h2 {
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .accueil-photos div {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    justify-content: center;
-    margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
 .accueil-photos img {
-    width: 600px;
-    height: 600px;
-    overflow: hidden;
-    object-fit: cover;
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cut-footer {
-    padding: 20px 20px;
-    margin: auto;
-    text-align: center;
-}
+  padding: 20px 20px;
+  margin: auto;
+  text-align: center;
+}/*# sourceMappingURL=index.css.map */

@@ -1,72 +1,71 @@
 .a-propos-main {
-    margin: auto;
+  margin: auto;
 }
 
 h1 {
-    text-align: center;
-    margin-top: 40px;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .a-propos-contact-progra a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .conteneur-a-propos {
-    width: 50%;
-    margin: auto;
-    padding: 50px;
-    border-left: 1px solid white;
-    border-bottom: 1px solid white;
-    padding-bottom: 60px;
+  width: 50%;
+  margin: auto;
+  padding: 50px;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  padding-bottom: 60px;
 }
 
 .conteneur-a-propos h2 {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .conteneur-a-propos ul {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .a-propos-progra {
-    width: 50%;
-    margin: auto;
-    padding: 50px;
-    border-left: 1px solid white;
-    border-bottom: 1px solid white;
-    padding-bottom: 60px;
+  width: 50%;
+  margin: auto;
+  padding: 50px;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  padding-bottom: 60px;
 }
 
 .a-propos-progra h2 {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .a-propos-progra ul {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .a-propos-contact-progra p {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .a-propos-contact {
-    width: 50%;
-    margin: auto;
-    padding: 50px;
-    border-left: 1px solid white;
-    border-bottom: 1px solid white;
-    margin-bottom: 20px;
+  width: 50%;
+  margin: auto;
+  padding: 50px;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
 }
 
 .a-propos-contact h2 {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .a-propos-contact p {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .cut-a-propos {
-    background: linear-gradient(90deg, rgba(129,157,215,1) 0%, rgba(102,196,215,1) 50%,
-    rgba(197,225,231,1)100%);
-}
+  background: linear-gradient(90deg, rgb(129, 157, 215) 0%, rgb(102, 196, 215) 50%, rgb(197, 225, 231) 100%);
+}/*# sourceMappingURL=a-propos.css.map */
