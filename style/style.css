@@ -55,6 +55,8 @@ footer div {
   background-color: rgb(129, 157, 215);
   text-decoration: none;
   text-shadow: 2px 2px 3px rgb(197, 225, 231);
+  border: 1px solid white;
+  border-radius: 50px;
 }
 
 a:hover {
