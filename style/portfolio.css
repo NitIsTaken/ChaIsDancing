@@ -1,0 +1,48 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+}
+header .logo a {
+  text-decoration: none;
+  color: #333;
+}
+header nav {
+  display: none;
+}
+header nav.active {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+}
+header nav.active ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header nav.active ul li {
+  display: inline-block;
+  margin-right: 0 20px;
+}
+header nav.active ul li a {
+  text-decoration: none;
+  color: #333;
+}
+header .menu-toggle {
+  cursor: pointer;
+}
+header:hover .menu-toggle img {
+  transform: scale(1.1);
+}
+header.menu-open nav {
+  display: block;
+}
+header.menu-open .menu-toggle img {
+  transform: rotate(90deg);
+}/*# sourceMappingURL=portfolio.css.map */

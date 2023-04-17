@@ -4,7 +4,15 @@
     align-items:center;
     justify-content: center;
     margin: auto;
+    width: 80%;
+    .cta {
+        display: inline-block;
+        margin-left: 18rem;
+        margin-top: 2rem;
+
+    }
 }
+
 
 .accueil-intro img {
     margin-top: 20px;
@@ -51,7 +59,8 @@
 }
 
 .cut-footer {
-    padding: 20px 20px;
+    padding: 20px;
     margin: auto;
     text-align: center;
 }
+

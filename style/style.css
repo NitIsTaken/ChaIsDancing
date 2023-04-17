@@ -49,6 +49,7 @@ footer div {
   background-color: white;
   padding: 20px 30px;
   border-radius: 50px;
+  border: 1px solid transparent;
 }
 .cta:hover {
   color: white;
@@ -65,4 +66,9 @@ a:hover {
 
 .lien-icone:hover {
   opacity: 0.5;
+}
+
+.title-name {
+  text-align: center;
+  text-shadow: 3px 3px 2px rgb(102, 196, 215);
 }/*# sourceMappingURL=style.css.map */
