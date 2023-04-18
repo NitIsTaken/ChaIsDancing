@@ -9,29 +9,14 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 330ms ease-in-out;
+}
+.photo-argentique img:hover {
+  transform: scale(1.03);
 }
 
 .lien-conteneur-photo {
   position: relative;
-}
-
-.photo-hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5em;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: none;
-}
-
-.lien-conteneur-photo:hover .photo-hover {
-  display: flex;
 }
 
 .portfolio-section-photo h2 {
