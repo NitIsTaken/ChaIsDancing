@@ -1,48 +1,40 @@
-header {
+.photo-argentique {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 700px 700px 700px;
+  gap: 15px;
+}
+.photo-argentique img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.lien-conteneur-photo {
+  position: relative;
+}
+
+.photo-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  padding: 20px;
-}
-header .logo a {
-  text-decoration: none;
-  color: #333;
-}
-header nav {
+  justify-content: center;
+  font-size: 1.5em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
   display: none;
 }
-header nav.active {
-  display: block;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  padding: 10px;
+
+.lien-conteneur-photo:hover .photo-hover {
+  display: flex;
 }
-header nav.active ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-header nav.active ul li {
-  display: inline-block;
-  margin-right: 0 20px;
-}
-header nav.active ul li a {
-  text-decoration: none;
-  color: #333;
-}
-header .menu-toggle {
-  cursor: pointer;
-}
-header:hover .menu-toggle img {
-  transform: scale(1.1);
-}
-header.menu-open nav {
-  display: block;
-}
-header.menu-open .menu-toggle img {
-  transform: rotate(90deg);
+
+.portfolio-section-photo h2 {
+  text-align: center;
+  margin: 30px;
 }/*# sourceMappingURL=portfolio.css.map */

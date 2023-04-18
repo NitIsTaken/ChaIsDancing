@@ -55,6 +55,10 @@
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 330ms ease-in-out;
+}
+.accueil-photos img:hover {
+  transform: scale(1.03);
 }
 
 .cut-footer {

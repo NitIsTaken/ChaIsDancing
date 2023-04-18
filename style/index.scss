@@ -56,6 +56,10 @@
     height: 600px;
     overflow: hidden;
     object-fit: cover;
+    transition: 330ms ease-in-out;
+    &:hover {
+        transform: scale(1.03);
+    }
 }
 
 .cut-footer {
@@ -63,4 +67,5 @@
     margin: auto;
     text-align: center;
 }
+
 

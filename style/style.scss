@@ -50,6 +50,7 @@ footer div {
     padding: 20px 30px;
     border-radius: 50px;
     border: 1px solid transparent;
+    transition: 330ms ease-in-out;
     &:hover {
         color: white;
         background-color: rgba(129,157,215,1);
@@ -57,6 +58,7 @@ footer div {
         text-shadow: 2px 2px 3px rgba(197,225,231,1);
         border: 1px solid white;
         border-radius: 50px;
+        transform: scale(1.1) translateY(5px);
     }
 }
 
@@ -71,4 +73,13 @@ a:hover {
 .title-name {
     text-align: center;
     text-shadow: 3px 3px 2px rgba(102,196,215,1);
+}
+
+.navbar{
+    text-align: center;
+    margin-top: 15px;
+    .navbar__link {
+       margin-left: 20px; 
+    }
+   
 }
