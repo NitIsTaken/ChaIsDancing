@@ -52,6 +52,42 @@
   }
 }
 
+.photo-argentique {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 800px 800px;
+  gap: 15px;
+  width: 90%;
+  margin: auto;
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 330ms ease-in-out;
+    &:hover{
+      transform: scale(1.03);
+    }
+  }
+}
+
+.photo-portrait {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 800px 800px;
+  gap: 15px;
+  width: 90%;
+  margin: auto;
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 330ms ease-in-out;
+    &:hover{
+      transform: scale(1.03);
+    }
+  }
+}
+
 .lien-conteneur-photo {
   position: relative;
 }
@@ -62,6 +98,12 @@
     margin: 30px;
   }
 }
+
+.titre-second {
+  background-color: white;
+  border: 1px solid white;
+}
+
 // $header-background-color: #fff;
 // $header-padding: 20px;
 // $nav-background-color: #fff;
