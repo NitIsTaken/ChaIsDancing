@@ -1,9 +1,9 @@
 .photo-studio {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 800px 800px 800px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 15px;
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 .photo-studio img {
@@ -20,9 +20,9 @@
 .photo-exte {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 800px 800px 800px 800px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 15px;
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 .photo-exte img {
@@ -39,9 +39,9 @@
 .photo-ancolie {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 800px 800px 800px;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 15px;
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 .photo-ancolie img {
@@ -58,9 +58,9 @@
 .photo-argentique {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 800px 800px;
+  grid-template-rows: 1fr 1fr;
   gap: 15px;
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 .photo-argentique img {
@@ -77,9 +77,9 @@
 .photo-portrait {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 800px 800px;
+  grid-template-rows: 1fr 1fr;
   gap: 15px;
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 .photo-portrait img {
