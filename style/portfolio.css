@@ -58,7 +58,7 @@
 .photo-argentique {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 15px;
   width: 95%;
   margin: auto;
@@ -77,7 +77,7 @@
 .photo-portrait {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 15px;
   width: 95%;
   margin: auto;
