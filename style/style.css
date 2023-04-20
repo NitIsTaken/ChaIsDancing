@@ -43,6 +43,9 @@ footer div {
   justify-content: center;
   margin-bottom: 8px;
 }
+footer div a {
+  margin-left: 10px;
+}
 
 .cta {
   display: inline-block;
