@@ -40,7 +40,6 @@
   grid-template-rows: 1fr 1fr 1fr;
   gap: 15px;
   width: 95%;
-  margin: auto;
   & img {
     width: 100%;
     height: 100%;
@@ -88,73 +87,3 @@
   border-radius: 50px;
 }
 
-// $header-background-color: #fff;
-// $header-padding: 20px;
-// $nav-background-color: #fff;
-// $nav-padding: 10px;
-// $nav-link-color: #333;
-// $nav-link-margin: 0 20px;
-// $menu-toggle-cursor: pointer;
-
-// header {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   background-color: $header-background-color;
-//   padding: $header-padding;
-  
-//   .logo {
-//     a {
-//       text-decoration: none;
-//       color: $nav-link-color;
-//     }
-//   }
-  
-//   nav {
-//     display: none;
-    
-//     &.active {
-//       display: block;
-//       background-color: $nav-background-color;
-//       padding: $nav-padding;
-      
-//       ul {
-//         list-style: none;
-//         margin: 0;
-//         padding: 0;
-        
-//         li {
-//           display: inline-block;
-//           margin-right: $nav-link-margin;
-          
-//           a {
-//             text-decoration: none;
-//             color: $nav-link-color;
-//           }
-//         }
-//       }
-//     }
-//     &.active + .grad {
-//       transform: translateX(30px);
-//     }
-//   }
-  
-//   .grad{
-//     transition: 330ms ease-in-out;
-//   }
-//   .menu-toggle {
-//     cursor: $menu-toggle-cursor;
-//   }
-  
-//   &:hover .menu-toggle img {
-//     transform: scale(1.1);
-//   }
-  
-//   &.menu-open nav {
-//     display: block;
-//   }
-  
-//   &.menu-open .menu-toggle img {
-//     transform: rotate(95deg);
-//   }
-// }

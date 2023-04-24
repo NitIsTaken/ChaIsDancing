@@ -23,31 +23,20 @@
               <a class="navbar__link" href="a-propos.html">À-propos</a>
             </div>
         </nav>
-        <!-- <div class="logo">
-          <a href="#">Mon Logo</a>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="a-propos.html">A Propos</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav> -->
-        <!-- <div class="menu-toggle">
-          <img src="images/Gif/barrel.gif" alt="Menu Toggle" />
-        </div> -->
       </header>
 
       <main>
 
        <section class="portfolio-section-photo">
         <br>
+        <ul>
+          <li onclick="toggleCategory('argentique')">
          <div class="titre-second">
            <h2>Argentique</h2>
          </div>
+         </li>
          <br>
-         <div class="photo-argentique">
+         <div class="photo-argentique" id="argentique-content" style="display:none">
            <a href="images/portfolio/argentique/DANCE IN LYON@YANIS OURABAH_9142.jpg" class="lien-conteneur-photo">
             <img src="images/portfolio/argentique/DANCE IN LYON@YANIS OURABAH_9142.jpg" alt="#">
           </a>
@@ -71,9 +60,11 @@
            </a>
          </div>
          <br>
+         <li onclick="toggleCategory (danse)">
          <div class="titre-second">
            <h2>Danse</h2>
          </div>
+         </li>
          <br>
          <div class="photo-danse">
            <a href="images/portfolio/exterieur/WEB©YANIS_OURABAH_1860.jpg" class="lien-conteneur-photo">
@@ -178,9 +169,11 @@
             </a> -->
           </div>
           <br>
+          <li onclick="toggleCategory (portraits)">
           <div class="titre-second">
             <h2>Portraits</h2>
           </div>
+          </li>
           <br>
           <div class="photo-portrait">
             <a href="images/portfolio/portrait/DANCE IN LYON@YANIS OURABAH_9054.jpg" class="lien-conteneur-photo">
@@ -242,16 +235,11 @@
             </a> -->
           </div>
         <br>
-        <div class="photo-studio">
-          <a href="" class="lien-conteneur-photo">
-            <img src="" alt="#">
-            <div class="photo-hover"></div>
-          </a>
-        </div>
-        <br>
+        <li onclick="toggleCategory (ancolie)">
         <div class="titre-second">
           <h2>Compagnie Ancolie</h2>
         </div>
+        </li>
         <br>
         <div class="photo-ancolie">
           <a href="images/portfolio/ancolie/garanceli-ancolie-rencontres-mai2021-008.jpg" class="lien-conteneur-photo">
@@ -282,6 +270,7 @@
             <img src="" alt="#">
           </a>
         </div>
+      </ul>
        </section>
        <section class="cut-footer">
         <br>

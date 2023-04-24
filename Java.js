@@ -1,12 +1,12 @@
-window.addEventListener('load', function() {
-    document.querySelector('.menu-toggle').addEventListener('click', function() {
+function toggleCategory(categoryId) {
+  var categoryContent = document.getElementById(categoryId + '-content');
+  if (categoryContent.style.display === 'none') {
+    categoryContent.style.display = 'grid';
+  } else {
+    categoryContent.style.display = 'none' ;
+  }
+}
 
-const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('nav');
-
-menuToggle.addEventListener('click', function() {
-  nav.classList.toggle('active');
-});
-
-});
-});
+document.getElementById('argentique').onclick = function (){
+  toggleCategory ('argentique');
+}
