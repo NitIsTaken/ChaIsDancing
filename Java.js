@@ -10,3 +10,15 @@ function toggleCategory(categoryId) {
 document.getElementById('argentique').onclick = function (){
   toggleCategory ('argentique');
 }
+
+document.getElementById('danse').onclick = function (){
+  toggleCategory ('danse');
+}
+
+document.getElementById('portrait').onclick = function (){
+  toggleCategory ('portrait');
+}
+
+document.getElementById('ancolie').onclick = function (){
+  toggleCategory ('ancolie');
+}
