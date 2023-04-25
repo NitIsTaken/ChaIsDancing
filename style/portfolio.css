@@ -4,8 +4,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  gap: 20px;
-  width: 100%;
+  gap: 15px;
+  width: 95%;
   margin: auto;
   transition: all 1s ease-in-out;
 }
@@ -20,18 +20,22 @@
   transform: scale(1.03);
 }
 .photo-danse.active {
-  max-height: 10000px;
+  max-height: 6000px;
 }
 
 .photo-ancolie {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  max-height: 0px;
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 15px;
   width: 95%;
   margin: auto;
+  transition: all 1s ease-in-out;
+}
+.photo-ancolie.active {
+  max-height: 6000px;
 }
 .photo-ancolie img {
   width: 100%;
@@ -54,9 +58,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 10px;
-  width: 95%;
   margin: auto;
+  gap: 15px;
+  width: 95%;
   transition: all 1000ms ease-in-out;
 }
 .photo-argentique.active {
@@ -85,14 +89,18 @@ li {
 }
 
 .photo-portrait {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  max-height: 0px;
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 15px;
   width: 95%;
   margin: auto;
+  transition: all 1000ms ease-in-out;
+}
+.photo-portrait.active {
+  max-height: 6000px;
 }
 .photo-portrait img {
   width: 100%;

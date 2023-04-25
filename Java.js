@@ -42,3 +42,9 @@ photoArgentique.style.display = 'grid';
 
 const photoDanse = document.querySelector('.photo-danse');
 photoArgentique.style.display = 'grid';
+
+const photoPortrait = document.querySelector('.photo-portrait');
+photoArgentique.style.display = 'grid';
+
+const photoAncolie = document.querySelector('.photo-ancolie');
+photoArgentique.style.display = 'grid';
