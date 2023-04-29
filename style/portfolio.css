@@ -121,8 +121,13 @@ li {
   transform: scale(1.03);
 }
 
-.lien-conteneur-photo {
-  position: relative;
+.video {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+}
+.video.active {
+  max-height: 6000px;
 }
 
 .portfolio-section-photo h2 {

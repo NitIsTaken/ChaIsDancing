@@ -21,6 +21,7 @@ h1 {
 }
 .conteneur-a-propos p {
   text-align: justify;
+  text-overflow: ellipsis;
 }
 
 .conteneur-a-propos h2 {

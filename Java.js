@@ -25,6 +25,10 @@ document.getElementById('ancolie').onclick=function (){
   toggleCategory('ancolie');
 }
 
+document.getElementById('video').onclick=function (){
+  toggleCategory('video');
+}
+
 const categoryBtns = document.querySelectorAll('.category-btn');
 categoryBtns.forEach(function(categoryBtn) {
   categoryBtn.addEventListener('click', function() {

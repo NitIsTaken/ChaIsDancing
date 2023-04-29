@@ -20,6 +20,7 @@ h1 {
     padding-bottom: 60px;
     & p {
         text-align: justify;
+        text-overflow: ellipsis;
     }
 }
 
