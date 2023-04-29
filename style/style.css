@@ -83,4 +83,8 @@ a:hover {
 }
 .navbar .navbar__link {
   margin-left: 20px;
+}
+.navbar .navbar__link--blue {
+  color: rgb(129, 157, 215);
+  margin-left: 20px;
 }/*# sourceMappingURL=style.css.map */
