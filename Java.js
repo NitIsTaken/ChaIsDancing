@@ -1,3 +1,4 @@
+// ajout ou retrait de la class 'category-open' pour ouverture et fermeture dans le portfolio
 function toggleCategory(categoryId) {
   var categoryContent = document.getElementById(categoryId + '-content');
   if (categoryContent.classList.contains('category-open')) {
@@ -8,35 +9,3 @@ function toggleCategory(categoryId) {
     categoryContent.style.maxHeight = categoryContent.scrollHeight + 'px';
   }
 }
-
-document.getElementById('argentique').onclick=function (){
-  toggleCategory('argentique');
-}
-
-document.getElementById('danse').onclick=function (){
-  toggleCategory('danse');
-}
-
-document.getElementById('portrait').onclick=function (){
-  toggleCategory('portrait');
-}
-
-document.getElementById('ancolie').onclick=function (){
-  toggleCategory('ancolie');
-}
-
-document.getElementById('video').onclick=function (){
-  toggleCategory('video');
-}
-
-const categoryBtns = document.querySelectorAll('.category-btn');
-categoryBtns.forEach(function(categoryBtn) {
-  categoryBtn.addEventListener('click', function() {
-    const categoryContent = this.nextElementSibling;
-    if (categoryContent.style.maxHeight) {
-      categoryContent.style.maxHeight = null;
-    } else {
-      categoryContent.style.maxHeight = categoryContent.scrollHeight + 'px';
-    }
-  });
-});
