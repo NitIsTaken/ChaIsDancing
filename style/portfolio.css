@@ -5,8 +5,8 @@ ul {
 
 li {
   background-color: linear-gradient(90deg, rgb(129, 157, 215) 0%, rgb(102, 196, 215) 50%, rgb(197, 225, 231) 100%);
-  border-top: 2px solid white;
-  padding: 85px;
+  border-top: 0.2vw solid white;
+  padding: 3vw;
 }
 
 .photo-argentique {
