@@ -72,4 +72,9 @@ h1 {
 
 .cut-a-propos {
   background: linear-gradient(90deg, rgb(129, 157, 215) 0%, rgb(102, 196, 215) 50%, rgb(197, 225, 231) 100%);
+}
+
+.cta {
+  margin-top: 2vw;
+  margin-left: 25vw;
 }/*# sourceMappingURL=a-propos.css.map */

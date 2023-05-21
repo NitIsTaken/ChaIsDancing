@@ -30,8 +30,8 @@
 
     <section class="portfolio-section-photo">
       <ul>
-        <li onclick="toggleCategory('argentique')">
-          <div class="titre-second">
+        <li>
+          <div class="titre-second" onclick="toggleCategory('argentique')">
             <h2>Argentique</h2>
           </div>
           <div class="photo-argentique" id="argentique-content">
@@ -39,10 +39,10 @@
               <p>Une série de photos argentiques prises par Yanis Ourabah</p>
             </div>
               <div class="grid-argentique">
-                <a href="images/portfolio/argentique/DANCE IN LYON@YANIS OURABAH_9142.jpg">
-                  <img src="images/portfolio/argentique/DANCE IN LYON@YANIS OURABAH_9142.jpg" alt="#">
-                  </a>
-                  <a href="images/portfolio/argentique/DANCE IN LYON@YANIS OURABAH_9141.jpg">
+                <!-- <a href="images/portfolio/argentique/DANCE IN LYON@YANIS OURABAH_9142.jpg"> -->
+                  <img src="images/portfolio/argentique/DANCE IN LYON@YANIS OURABAH_9142.jpg" alt="#" onclick="openOverlay('images/portfolio/argentique/DANCE IN LYON@YANIS OURABAH_9142.jpg','Yanis Ourabah')">
+                  <!-- </a> -->
+                  <a target="_blank" href="images/portfolio/argentique/DANCE IN LYON@YANIS OURABAH_9141.jpg">
                     <img src="images/portfolio/argentique/DANCE IN LYON@YANIS OURABAH_9141.jpg" alt="#">
                   </a>
                   <a href="images/portfolio/argentique/DANCE IN LYON@YANIS OURABAH_9109.jpg">
@@ -65,6 +65,7 @@
         </li>
         <li onclick="toggleCategory ('danse')">
           <div class="titre-second">
+            <!-- <img src="images/portfolio/Studio/DSC_4453.jpg"> -->
           <h2>Danse</h2>
           </div>
           <div class="photo-danse" id="danse-content">
@@ -292,7 +293,8 @@
               <p>Quelques vidéos de danse ainsi que des projets sur lesquels j'ai travaillé</p>
             </div>
             <div class="grid-video">
-              <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/8yiRxT9SFMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/8yiRxT9SFMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/2hdHqQ9cQ8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
           </div>
         </li>
