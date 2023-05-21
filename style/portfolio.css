@@ -199,9 +199,9 @@ li {
 }
 
 .danse:before {
-  background-image: url("../images/portfolio/Studio/1690-5151.jpg");
+  background-image: url("../images/portfolio/danse/WEB©YANIS_OURABAH_1860.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: center;
 }
 
 .portrait::before {
@@ -211,9 +211,9 @@ li {
 }
 
 .ancolie::before {
-  background-image: url("../images/portfolio/ancolie/garanceli-ancolie-rencontres-mai2021-224.jpg");
+  background-image: url("../images/portfolio/ancolie/garanceli-ancolie-rencontres-mai2021-007.jpg");
   background-size: cover;
-  background-position: top 1000px right 0px;
+  background-position: center;
 }
 
 .videos::before {
