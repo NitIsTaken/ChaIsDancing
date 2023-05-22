@@ -9,3 +9,20 @@ function toggleCategory(categoryId) {
     categoryContent.style.maxHeight = categoryContent.scrollHeight + 'px';
   }
 }
+
+
+function openModal(img) {
+  var modal = document.getElementById("myModal");
+  var modalImg = document.getElementById("modalImg");
+  var captionText = document.getElementById("caption");
+  var originalSrc = img.dataset.original || img.src;
+
+  modal.style.display = "block";
+  modalImg.src = originalSrc;
+  captionText.innerHTML = img.alt;
+}
+
+function closeModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}
