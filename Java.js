@@ -16,13 +16,21 @@ function openModal(img) {
   var modalImg = document.getElementById("modalImg");
   var captionText = document.getElementById("caption");
   var originalSrc = img.dataset.original || img.src;
+  var modalContent = document.querySelector(".modal-content");
 
   modal.style.display = "block";
   modalImg.src = originalSrc;
   captionText.innerHTML = img.alt;
+  setTimeout(function (){
+    modalContent.classList.add("show");
+  },10);
+
 }
 
 function closeModal() {
   var modal = document.getElementById("myModal");
+  var modalContent = document.querySelector(".modal-content");
+
   modal.style.display = "none";
+  modalContent.classList.remove("show");
 }
