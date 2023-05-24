@@ -20,7 +20,7 @@ jobs:
       run: npm run build
 
     - name: Déploiement via FTP
-      uses: wftpsh/ftp-sync@3.0.0
+      uses: samkirland/ftp-deploy-action@4.0.0
       with:
         server: ${{ secrets.SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
