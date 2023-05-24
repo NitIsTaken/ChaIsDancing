@@ -1,82 +1,3 @@
-// var currentIndex = 0;
-// var images = [];
-
-// function openModal(img) {
-//   var modal = document.getElementById("myModal");
-//   var modalImg = document.getElementById("modalImg");
-//   var captionText = document.getElementById("caption");
-//   var originalSrc = img.dataset.original || img.src;
-//   var modalContent = document.querySelector(".modal-content");
-
-//   modal.style.display = "block";
-//   modalImg.src = originalSrc;
-//   modalContent.classList.add("show");
-//   captionText.innerHTML = img.alt;
-
-//   currentIndex = Array.from(images[category]).indexOf(img);
-// }
-
-// function closeModal() {
-//   var modal = document.getElementById("myModal");
-//   modal.style.display = "none";
-// }
-
-// function navigateGallery(direction) {
-//   if (direction === "prev" && currentIndex > 0) {
-//     currentIndex--;
-//   } else if (direction === "next" && currentIndex < images.length - 1) {
-//     currentIndex++;
-//   }
-
-//   var modalImg = document.getElementById("modalImg");
-//   var captionText = document.getElementById("caption");
-
-//   var img = images[currentIndex];
-//   var originalSrc = img.dataset.original || img.src;
-
-//   modalImg.src = originalSrc;
-//   captionText.innerHTML = img.alt;
-// }
-
-// function handleModalClick(event) {
-//   var target = event.target;
-//   if (target.classList.contains("modal-content")) {
-//     navigateGallery("next");
-//   }
-// }
-
-// function toggleCategory(categoryId) {
-//   var categoryContent = document.getElementById(categoryId + "-content");
-//   if (categoryContent.classList.contains("category-open")) {
-//     categoryContent.classList.remove("category-open");
-//     categoryContent.style.maxHeight = "0px";
-//   } else {
-//     categoryContent.classList.add("category-open");
-//     categoryContent.style.maxHeight = categoryContent.scrollHeight + "px";
-//   }
-// }
-
-// // Récupérer toutes les images du portfolio
-// images = document.querySelectorAll(".grid-argentique img");
-
-// // Ajouter les gestionnaires d'événements pour les images
-// images.forEach(function (img) {
-//   img.addEventListener("click", function () {
-//     openModal(img);
-//   });
-// });
-
-// // Ajouter les gestionnaires d'événements pour les flèches de navigation
-// var prevArrow = document.querySelector(".arrow.prev");
-// var nextArrow = document.querySelector(".arrow.next");
-
-// prevArrow.addEventListener("click", function () {
-//   navigateGallery("prev");
-// });
-
-// nextArrow.addEventListener("click", function () {
-//   navigateGallery("next");
-// });
 var currentIndex = 0;
 var images = {};
 var currentCategory = ""; // Ajoutez cette variable pour stocker la catégorie actuelle
@@ -107,25 +28,6 @@ function closeModal() {
   modalContent.classList.remove("show");
 }
 
-// function navigateGallery(direction) {
-//   var categoryImages = images[currentCategory];
-//   var numImages = categoryImages.length;
-
-//   if (direction === "prev" && currentIndex > 0) {
-//     currentIndex--;
-//   } else if (direction === "next" && currentIndex < numImages - 1) {
-//     currentIndex++;
-//   }
-
-//   var img = categoryImages[currentIndex];
-//   var modalImg = document.getElementById("modalImg");
-//   var captionText = document.getElementById("caption");
-//   var originalSrc = img.dataset.original || img.src;
-
-//   modalImg.src = originalSrc;
-//   captionText.innerHTML = img.alt;
-// }
-
 function navigateGallery(direction) {
   var categoryImages = images[currentCategory];
   var numImages = categoryImages.length;
@@ -141,6 +43,14 @@ function navigateGallery(direction) {
   var captionText = document.getElementById("caption");
   var modalContent = document.querySelector(".modal-content");
 
+  // Désactiver la flèche précédente si c'est la première photo de la catégorie
+  var prevArrow = document.querySelector(".arrow.prev");
+  prevArrow.style.display = (currentIndex === 0) ? "none" : "block";
+
+  // Désactiver la flèche suivante si c'est la dernière photo de la catégorie
+  var nextArrow = document.querySelector(".arrow.next");
+  nextArrow.style.display = (currentIndex === numImages - 1) ? "none" : "block";
+
   modalContent.classList.remove("show");
 
   setTimeout(function() {
@@ -155,13 +65,63 @@ function navigateGallery(direction) {
   }, 300);
 }
 
+// Ajouter les gestionnaires d'événements pour les flèches de navigation
+var prevArrow = document.querySelector(".arrow.prev");
+var nextArrow = document.querySelector(".arrow.next");
 
-function handleModalClick(event) {
-  var target = event.target;
-  if (target.classList.contains("modal-content")) {
-    navigateGallery("next");
-  }
-}
+prevArrow.addEventListener("click", function () {
+  navigateGallery("prev");
+});
+
+nextArrow.addEventListener("click", function () {
+  navigateGallery("next");
+});
+
+
+// function navigateGallery(direction) {
+//   var categoryImages = images[currentCategory];
+//   var numImages = categoryImages.length;
+
+//   if (direction === "prev" && currentIndex > 0) {
+//     currentIndex--;
+//   } else if (direction === "next" && currentIndex < numImages - 1) {
+//     currentIndex++;
+//   }
+
+//   var img = categoryImages[currentIndex];
+//   var modalImg = document.getElementById("modalImg");
+//   var captionText = document.getElementById("caption");
+//   var modalContent = document.querySelector(".modal-content");
+
+//   modalContent.classList.remove("show");
+
+//   setTimeout(function() {
+//     var originalSrc = img.dataset.original || img.src;
+
+//     modalImg.src = originalSrc;
+//     captionText.innerHTML = img.alt;
+
+//     setTimeout(function() {
+//       modalContent.classList.add("show");
+//     }, 50);
+    
+//     // Désactiver la flèche précédente si c'est la première photo de la catégorie
+//     var prevArrow = document.querySelector(".arrow.prev");
+//     prevArrow.classList.toggle("disabled", currentIndex === 0);
+    
+//     // Désactiver la flèche suivante si c'est la dernière photo de la catégorie
+//     var nextArrow = document.querySelector(".arrow.next");
+//     nextArrow.classList.toggle("disabled", currentIndex === numImages - 1);
+//   }
+  
+  
+//   function handleModalClick(event) {
+//     var target = event.target;
+//     if (target.classList.contains("modal-content")) {
+//       navigateGallery("next");
+//     }
+//   }, 300);
+// }
 
 function toggleCategory(categoryId) {
   var categoryContent = document.getElementById(categoryId + "-content");
