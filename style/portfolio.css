@@ -267,4 +267,25 @@ li {
   color: #fff;
   margin-top: 20px;
   font-size: 18px;
+}
+.modal .prev,
+.modal .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+}
+.modal .prev:hover,
+.modal .next:hover {
+  opacity: 0.8;
+}
+.modal .prev {
+  left: 10px;
+}
+.modal .next {
+  right: 10px;
 }/*# sourceMappingURL=portfolio.css.map */

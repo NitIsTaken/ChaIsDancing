@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <script src="Java.js"></script>
+  
   <header>
     <div class="title-name">
       <h2>Charlotte Brossard</h2>
@@ -47,11 +47,13 @@
               <img src="images/portfolio/argentique/©YANIS OURABAH DANCE IN LYON_2370.jpg" alt="© Yanis Ourabah" onclick="openModal(this)">
               <img src="images/portfolio/argentique/©YANIS OURABAH DANCE IN LYON_2343.jpg" alt="© Yanis Ourabah" onclick="openModal(this)">
             </div>
-            <div id="myModal" class="modal">
+            <div id="myModal" class="modal" onclick="handleModalClick(event)">
               <span class="close" onclick="closeModal()">&times;</span>
+              <div class="arrow prev">&lt;</div>
+              <div class="arrow next">&gt;</div>
               <img id="modalImg" class="modal-content" src="">
               <div id="caption"></div>
-            </div>
+            </div>                    
           </div>
         </li>
         <li>
@@ -149,7 +151,7 @@
             </div>
           </div>
         </li>
-        <!-- <li>
+        <li>
           <div class="titre-second videos" onclick="toggleCategory('video')">
             <h2>Vidéos</h2>
           </div>
@@ -162,7 +164,7 @@
               <iframe width="560" height="315" src="https://www.youtube.com/embed/2hdHqQ9cQ8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
           </div>
-        </li> -->
+        </li>
       </ul>
     </section>
   </main>
@@ -180,4 +182,6 @@
     </div>
     <p>Site par Martin Lafuente</p>
   </footer>
+  <script src="Java.js"></script>
 </body>
+</html>
