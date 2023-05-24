@@ -1,0 +1,29 @@
+name: Compilation et déploiement
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Vérification du dépôt
+      uses: actions/checkout@v2
+
+    - name: Installation des dépendances
+      run: npm ci
+
+    - name: Compilation
+      run: npm run build
+
+    - name: Déploiement via FTP
+      uses: samkirland/ftp-deploy-action@4.0.0
+      with:
+        server: ${{ secrets.SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./dist/
+        server-dir: /public_html
