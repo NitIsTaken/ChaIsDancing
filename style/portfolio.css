@@ -227,7 +227,7 @@ h2 {
 }
 
 .videos::before {
-  background-image: url("../images/portfolio/portrait/WEB©YANIS_OURABAH_8951.jpg");
+  background-image: url("../images/portfolio/portrait/©YANIS OURABAH DANCE IN LYON_2374.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -283,7 +283,6 @@ h2 {
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
   z-index: 1;
-  border: 1px solid black;
 }
 .modal .prev:hover,
 .modal .next:hover {

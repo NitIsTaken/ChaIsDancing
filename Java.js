@@ -78,51 +78,6 @@ nextArrow.addEventListener("click", function () {
 });
 
 
-// function navigateGallery(direction) {
-//   var categoryImages = images[currentCategory];
-//   var numImages = categoryImages.length;
-
-//   if (direction === "prev" && currentIndex > 0) {
-//     currentIndex--;
-//   } else if (direction === "next" && currentIndex < numImages - 1) {
-//     currentIndex++;
-//   }
-
-//   var img = categoryImages[currentIndex];
-//   var modalImg = document.getElementById("modalImg");
-//   var captionText = document.getElementById("caption");
-//   var modalContent = document.querySelector(".modal-content");
-
-//   modalContent.classList.remove("show");
-
-//   setTimeout(function() {
-//     var originalSrc = img.dataset.original || img.src;
-
-//     modalImg.src = originalSrc;
-//     captionText.innerHTML = img.alt;
-
-//     setTimeout(function() {
-//       modalContent.classList.add("show");
-//     }, 50);
-    
-//     // Désactiver la flèche précédente si c'est la première photo de la catégorie
-//     var prevArrow = document.querySelector(".arrow.prev");
-//     prevArrow.classList.toggle("disabled", currentIndex === 0);
-    
-//     // Désactiver la flèche suivante si c'est la dernière photo de la catégorie
-//     var nextArrow = document.querySelector(".arrow.next");
-//     nextArrow.classList.toggle("disabled", currentIndex === numImages - 1);
-//   }
-  
-  
-//   function handleModalClick(event) {
-//     var target = event.target;
-//     if (target.classList.contains("modal-content")) {
-//       navigateGallery("next");
-//     }
-//   }, 300);
-// }
-
 function toggleCategory(categoryId) {
   var categoryContent = document.getElementById(categoryId + "-content");
   if (categoryContent.classList.contains("category-open")) {
