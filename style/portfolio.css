@@ -9,6 +9,10 @@ li {
   border-top: 0.2vw solid white;
 }
 
+h2 {
+  font-family: "montserrat", "sans-serif";
+}
+
 .photo-argentique {
   max-height: 0px;
   overflow: hidden;
@@ -157,7 +161,6 @@ li {
 
 .portfolio-section-photo h2 {
   text-align: center;
-  font-family: "montserrat", "sans-serif";
   margin: 30px;
   font-size: 3vw;
 }
