@@ -1,4 +1,4 @@
-name: Compilation et déploiement
+name: Déploiement du site statique
 
 on:
   push:
@@ -13,17 +13,12 @@ jobs:
     - name: Vérification du dépôt
       uses: actions/checkout@v2
 
-    # - name: Installation des dépendances
-    #   run: npm ci 
-
-    # - name: Compilation
-    #   run: npm run build
-
     - name: Déploiement via FTP
-      uses: samkirkland/ftp-deploy-action@4.0.0
+      uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        server: ${{ secrets.SERVER }}
+         server: ${{ secrets.SERVER }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
-        local-dir: ./dist
+        local-dir: ./
         server-dir: /public_html/
+        args: --delete
