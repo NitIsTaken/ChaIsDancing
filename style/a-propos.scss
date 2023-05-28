@@ -2,9 +2,14 @@
     margin: auto;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
     margin-top: 40px;
+    font-size: 3.5em;
+}
+
+h3 {
+    font-size: 1.5em;
 }
 
 .a-propos-contact-progra a {
@@ -24,7 +29,7 @@ h1 {
     }
 }
 
-.conteneur-a-propos h2 {
+.conteneur-a-propos h3 {
     margin-top: 30px;
 }
 
@@ -41,7 +46,7 @@ h1 {
     padding-bottom: 60px;
 }
 
-.a-propos-progra h2 {
+.a-propos-progra h3 {
     margin-top: 30px;
 }
 
@@ -62,7 +67,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-.a-propos-contact h2 {
+.a-propos-contact h3 {
     margin-top: 30px;
 }
 
