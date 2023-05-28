@@ -2,6 +2,16 @@
   margin: auto;
 }
 
+.title-name > h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+footer > h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
 h1, h2 {
   text-align: center;
   margin-top: 40px;
@@ -10,7 +20,7 @@ h1, h2 {
 
 h3 {
   font-size: 1.5em;
-  margin-top: 30px;
+  text-decoration: underline;
 }
 
 .a-propos-contact-progra a {
@@ -28,6 +38,9 @@ h3 {
 .conteneur-a-propos p {
   text-align: justify;
   text-overflow: ellipsis;
+}
+.conteneur-a-propos h3 {
+  margin-top: 20px;
 }
 
 .conteneur-a-propos h2 {
