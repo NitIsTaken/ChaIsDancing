@@ -5,13 +5,14 @@ var currentCategory = ""; // Ajoutez cette variable pour stocker la catégorie a
 function openModal(img, category) {
   var modal = document.getElementById("myModal");
   var modalImg = document.getElementById("modalImg");
-  var captionText = document.getElementById("caption");
+  var creditsElement = document.getElementById("credits"); // Ajoutez l'élément pour les crédits
   var originalSrc = img.dataset.original || img.src;
+  var creditsText = img.dataset.credit; // Récupérez les crédits de la photo
   var modalContent = document.querySelector(".modal-content");
 
   modal.style.display = "block";
   modalImg.src = originalSrc;
-  captionText.innerHTML = img.alt;
+  creditsElement.innerHTML = creditsText; // Attribuez les crédits à l'élément approprié
 
   currentIndex = Array.from(images[category]).indexOf(img);
   currentCategory = category; // Mettez à jour la catégorie actuelle
@@ -40,7 +41,7 @@ function navigateGallery(direction) {
 
   var img = categoryImages[currentIndex];
   var modalImg = document.getElementById("modalImg");
-  var captionText = document.getElementById("caption");
+  var creditsElement = document.getElementById("credits"); // Ajoutez l'élément pour les crédits
   var modalContent = document.querySelector(".modal-content");
 
   // Désactiver la flèche précédente si c'est la première photo de la catégorie
@@ -55,9 +56,10 @@ function navigateGallery(direction) {
 
   setTimeout(function() {
     var originalSrc = img.dataset.original || img.src;
+    var creditsText = img.dataset.credit; // Récupérez les crédits de la photo
 
     modalImg.src = originalSrc;
-    captionText.innerHTML = img.alt;
+    creditsElement.innerHTML = creditsText; // Attribuez les crédits à l'élément approprié
 
     setTimeout(function() {
       modalContent.classList.add("show");
