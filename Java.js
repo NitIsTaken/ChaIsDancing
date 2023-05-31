@@ -1,24 +1,25 @@
 var currentIndex = 0;
 var images = {};
-var currentCategory = "";
+var currentCategory = ""; // Ajoutez cette variable pour stocker la catégorie actuelle
 
 function openModal(img, category) {
   var modal = document.getElementById("myModal");
   var modalImg = document.getElementById("modalImg");
-  var creditsElement = document.getElementById("credits");
+  var creditsElement = document.getElementById("credits"); // Ajoutez l'élément pour les crédits
   var originalSrc = img.dataset.original || img.src;
-  var creditsText = img.dataset.credit;
+  var creditsText = img.dataset.credit; // Récupérez les crédits de la photo
   var modalContent = document.querySelector(".modal-content");
 
   modal.style.display = "block";
   modalImg.src = originalSrc;
-  creditsElement.innerHTML = creditsText;
+  creditsElement.innerHTML = creditsText; // Attribuez les crédits à l'élément approprié
 
   currentIndex = Array.from(images[category]).indexOf(img);
-  currentCategory = category;
+  currentCategory = category; // Mettez à jour la catégorie actuelle
   setTimeout(function() {
     modalContent.classList.add("show");
   }, 10);
+  
 }
 
 function closeModal() {
@@ -32,35 +33,33 @@ function navigateGallery(direction) {
   var categoryImages = images[currentCategory];
   var numImages = categoryImages.length;
 
-  var prevArrow = document.querySelector(".arrow.prev");
-  var nextArrow = document.querySelector(".arrow.next");
-
   if (direction === "prev" && currentIndex > 0) {
     currentIndex--;
-    nextArrow.style.display = "block";
-    if (currentIndex === 0) {
-      prevArrow.style.display = "none";
-    }
   } else if (direction === "next" && currentIndex < numImages - 1) {
     currentIndex++;
-    prevArrow.style.display = "block";
-    if (currentIndex === numImages - 1) {
-      nextArrow.style.display = "none";
-    }
   }
 
   var img = categoryImages[currentIndex];
   var modalImg = document.getElementById("modalImg");
-  var creditsElement = document.getElementById("credits");
-  var originalSrc = img.dataset.original || img.src;
-  var creditsText = img.dataset.credit;
+  var creditsElement = document.getElementById("credits"); // Ajoutez l'élément pour les crédits
   var modalContent = document.querySelector(".modal-content");
+
+  // Désactiver la flèche précédente si c'est la première photo de la catégorie
+  var prevArrow = document.querySelector(".arrow.prev");
+  prevArrow.style.display = (currentIndex === 0) ? "none" : "block";
+
+  // Désactiver la flèche suivante si c'est la dernière photo de la catégorie
+  var nextArrow = document.querySelector(".arrow.next");
+  nextArrow.style.display = (currentIndex === numImages - 1) ? "none" : "block";
 
   modalContent.classList.remove("show");
 
   setTimeout(function() {
+    var originalSrc = img.dataset.original || img.src;
+    var creditsText = img.dataset.credit; // Récupérez les crédits de la photo
+
     modalImg.src = originalSrc;
-    creditsElement.innerHTML = creditsText;
+    creditsElement.innerHTML = creditsText; // Attribuez les crédits à l'élément approprié
 
     setTimeout(function() {
       modalContent.classList.add("show");
@@ -68,20 +67,7 @@ function navigateGallery(direction) {
   }, 300);
 }
 
-images = {
-  // Les images de vos différentes catégories ici
-};
-
-// Ajoutez les gestionnaires d'événements pour les images
-Object.keys(images).forEach(function (category) {
-  images[category].forEach(function (img) {
-    img.addEventListener("click", function () {
-      openModal(img, category);
-    });
-  });
-});
-
-// Ajoutez les gestionnaires d'événements pour les flèches de navigation
+// Ajouter les gestionnaires d'événements pour les flèches de navigation
 var prevArrow = document.querySelector(".arrow.prev");
 var nextArrow = document.querySelector(".arrow.next");
 
@@ -93,7 +79,6 @@ nextArrow.addEventListener("click", function () {
   navigateGallery("next");
 });
 
-// ...
 
 function toggleCategory(categoryId) {
   var categoryContent = document.getElementById(categoryId + "-content");
@@ -106,13 +91,32 @@ function toggleCategory(categoryId) {
   }
 }
 
-// Ajouter les gestionnaires d'événements pour l'ouverture des catégories
-var categoryButtons = document.querySelectorAll(".category-button");
-categoryButtons.forEach(function (button) {
-  button.addEventListener("click", function () {
-    var categoryId = button.dataset.category;
-    toggleCategory(categoryId);
+// Récupérer toutes les images du portfolio pour chaque catégorie
+images["argentique"] = Array.from(document.querySelectorAll(".grid-argentique img"));
+images["danse"] = Array.from(document.querySelectorAll(".grid-danse img"));
+images ["portraits"] = Array.from(document.querySelectorAll(".grid-portrait img"));
+images["ancolie"] = Array.from(document.querySelectorAll(".grid-ancolie img"))
+// Ajoutez d'autres catégories si nécessaire
+
+// Ajouter les gestionnaires d'événements pour les images de chaque catégorie
+Object.keys(images).forEach(function (category) {
+  var categoryImages = images[category];
+  
+  categoryImages.forEach(function (img) {
+    img.addEventListener("click", function () {
+      openModal(img, category);
+    });
   });
 });
 
-// ...
+// Ajouter les gestionnaires d'événements pour les flèches de navigation
+var prevArrow = document.querySelector(".arrow.prev");
+var nextArrow = document.querySelector(".arrow.next");
+
+prevArrow.addEventListener("click", function () {
+  navigateGallery("prev");
+});
+
+nextArrow.addEventListener("click", function () {
+  navigateGallery("next");
+});
