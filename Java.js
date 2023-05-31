@@ -16,6 +16,16 @@ function openModal(img, category) {
 
   currentIndex = Array.from(images[category]).indexOf(img);
   currentCategory = category; // Mettez à jour la catégorie actuelle
+
+console.log(currentIndex)
+
+  var prevArrow = document.querySelector(".arrow.prev");
+  var nextArrow = document.querySelector(".arrow.next");
+
+  prevArrow.style.display = (currentIndex === 0) ? "none" : "block";
+  nextArrow.style.display = (currentIndex === images[category].length - 1) ? "none" : "block";
+
+
   setTimeout(function() {
     modalContent.classList.add("show");
   }, 10);
@@ -29,9 +39,12 @@ function closeModal() {
   modalContent.classList.remove("show");
 }
 
+
+
 function navigateGallery(direction) {
   var categoryImages = images[currentCategory];
   var numImages = categoryImages.length;
+
 
   if (direction === "prev" && currentIndex > 0) {
     currentIndex--;
@@ -39,11 +52,13 @@ function navigateGallery(direction) {
     currentIndex++;
   }
 
+  console. log(currentIndex)
+  
   var img = categoryImages[currentIndex];
   var modalImg = document.getElementById("modalImg");
   var creditsElement = document.getElementById("credits"); // Ajoutez l'élément pour les crédits
   var modalContent = document.querySelector(".modal-content");
-
+  
   // Désactiver la flèche précédente si c'est la première photo de la catégorie
   var prevArrow = document.querySelector(".arrow.prev");
   prevArrow.style.display = (currentIndex === 0) ? "none" : "block";
@@ -66,19 +81,6 @@ function navigateGallery(direction) {
     }, 50);
   }, 300);
 }
-
-// Ajouter les gestionnaires d'événements pour les flèches de navigation
-var prevArrow = document.querySelector(".arrow.prev");
-var nextArrow = document.querySelector(".arrow.next");
-
-prevArrow.addEventListener("click", function () {
-  navigateGallery("prev");
-});
-
-nextArrow.addEventListener("click", function () {
-  navigateGallery("next");
-});
-
 
 function toggleCategory(categoryId) {
   var categoryContent = document.getElementById(categoryId + "-content");
@@ -120,3 +122,4 @@ prevArrow.addEventListener("click", function () {
 nextArrow.addEventListener("click", function () {
   navigateGallery("next");
 });
+
