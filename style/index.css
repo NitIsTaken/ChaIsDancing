@@ -65,4 +65,35 @@
   padding: 20px;
   margin: auto;
   text-align: center;
+}
+
+@media screen and (max-width: 996px) {
+  .accueil-intro {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .accueil-intro div {
+    padding-right: 0;
+    text-align: center;
+    order: 2;
+  }
+  .accueil-intro div .cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .accueil-intro img {
+    order: 1;
+    margin-bottom: 20px;
+  }
+  .accueil-photos {
+    padding: 20px;
+  }
+  .accueil-photos div {
+    display: grid;
+  }
 }/*# sourceMappingURL=index.css.map */
