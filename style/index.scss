@@ -94,6 +94,9 @@
     .accueil-intro img {
       order: 1;
       margin-bottom: 20px;
+      max-width: 350px;
+      object-fit: cover;
+      
     }
   
     .accueil-photos {
@@ -102,6 +105,10 @@
   
     .accueil-photos div {
       display: grid;
+
+      & img {
+        max-width: 350px;
+      }
     }
   
 }
