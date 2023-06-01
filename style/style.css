@@ -91,4 +91,10 @@ a:hover {
 .navbar .navbar__link--blue {
   color: rgb(129, 157, 215);
   margin-left: 20px;
+}
+
+@media screen and (max-width: 996px) {
+  h1 {
+    font-size: 2em;
+  }
 }/*# sourceMappingURL=style.css.map */

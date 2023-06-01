@@ -89,11 +89,35 @@ h3 {
   margin-top: 30px;
 }
 
-.cut-a-propos {
-  background: linear-gradient(90deg, rgb(129, 157, 215) 0%, rgb(102, 196, 215) 50%, rgb(197, 225, 231) 100%);
-}
-
 .cta {
   margin-top: 2vw;
   margin-left: 25vw;
+}
+
+@media screen and (max-width: 996px) {
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.4em;
+  }
+  .conteneur-a-propos {
+    width: 80%;
+    padding: 20px;
+  }
+  .conteneur-a-propos .cta {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  .a-propos-progra {
+    width: 80%;
+    padding: 20px;
+  }
+  .a-propos-contact {
+    width: 80%;
+    padding: 20px;
+  }
 }/*# sourceMappingURL=a-propos.css.map */

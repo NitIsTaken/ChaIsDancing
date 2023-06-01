@@ -92,3 +92,9 @@ a:hover {
      margin-left: 20px;
     }
 }
+
+@media screen and (max-width : 996px) {
+    h1 {
+        font-size: 2em;
+    }
+}
