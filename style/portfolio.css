@@ -203,31 +203,31 @@ h2 {
 }
 
 .argentique:before {
-  background-image: url("../images/portfolio/argentique/©YANIS OURABAH DANCE IN LYON_2370.jpg");
+  background-image: url("../images/portfolio/argentique/©YANIS-OURABAH-DANCE-IN-LYON_2370.webp");
   background-size: cover;
   background-position: center;
 }
 
 .danse:before {
-  background-image: url("../images/portfolio/danse/WEB©YANIS_OURABAH_1860.jpg");
+  background-image: url("../images/portfolio/danse/WEB©YANIS_OURABAH_1860.webp");
   background-size: cover;
   background-position: center;
 }
 
 .portrait::before {
-  background-image: url("../images/portfolio/portrait/WEB©YANIS_OURABAH_8951.jpg");
+  background-image: url("../images/portfolio/portrait/web194169yanis-ourabah-8951.webp");
   background-size: cover;
   background-position: center;
 }
 
 .ancolie::before {
-  background-image: url("../images/portfolio/ancolie/garanceli-ancolie-rencontres-mai2021-007.jpg");
+  background-image: url("../images/portfolio/ancolie/garanceli-ancolie-rencontres-mai2021-007.webp");
   background-size: cover;
   background-position: center;
 }
 
 .videos::before {
-  background-image: url("../images/portfolio/portrait/©YANIS OURABAH DANCE IN LYON_2324.jpg");
+  background-image: url("../images/portfolio/portrait/4169yanis-ourabah-dance-in-lyon-2324.webp");
   background-size: cover;
   background-position: center;
 }
