@@ -301,3 +301,12 @@ h2 {
 }
 
 
+@media screen and (max-width: 996px) {
+
+  .modalImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+}
