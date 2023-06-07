@@ -293,4 +293,12 @@ h2 {
 }
 .modal .next {
   right: 10px;
+}
+
+@media screen and (max-width: 996px) {
+  .modalImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=portfolio.css.map */

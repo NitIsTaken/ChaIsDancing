@@ -37,6 +37,10 @@ h3 {
     & p {
         text-align: justify;
         text-overflow: ellipsis;
+
+        & a {
+           font-weight: bold;
+        }
     }
     & h3 {
         margin-top: 20px;
@@ -87,10 +91,9 @@ h3 {
 
 .a-propos-contact p {
     margin-top: 30px;
-}
-
-.cut-a-propos {
-   
+    & a {
+        font-weight: bold;
+     }
 }
 
 .cta {

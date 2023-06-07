@@ -39,6 +39,9 @@ h3 {
   text-align: justify;
   text-overflow: ellipsis;
 }
+.conteneur-a-propos p a {
+  font-weight: bold;
+}
 .conteneur-a-propos h3 {
   margin-top: 20px;
 }
@@ -87,6 +90,9 @@ h3 {
 
 .a-propos-contact p {
   margin-top: 30px;
+}
+.a-propos-contact p a {
+  font-weight: bold;
 }
 
 .cta {
