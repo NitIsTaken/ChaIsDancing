@@ -25,7 +25,6 @@ console.log(currentIndex)
   prevArrow.style.display = (currentIndex === 0) ? "none" : "block";
   nextArrow.style.display = (currentIndex === images[category].length - 1) ? "none" : "block";
 
-
   setTimeout(function() {
     modalContent.classList.add("show");
   }, 10);

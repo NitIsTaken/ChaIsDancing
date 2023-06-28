@@ -285,6 +285,10 @@ h2 {
     cursor: pointer;
     transition: opacity 0.3s ease-in-out;
     z-index: 1;
+    // text-shadow: 1px 1px 5px lightgray,
+    // -1px -1px 5px lightgray,
+    // -1px 1px 5px lightgray,
+    // 1px -1px 5px lightgray;
     
     &:hover {
       opacity: 0.8;
@@ -303,10 +307,11 @@ h2 {
 
 @media screen and (max-width: 996px) {
 
-  .modalImg{
+  .modal-content{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    object-fit: contain;
   }
-  
 }
